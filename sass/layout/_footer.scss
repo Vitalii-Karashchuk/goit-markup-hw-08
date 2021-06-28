@@ -1,0 +1,57 @@
+.footer {
+  background: var(--background-footer-color);
+  padding: 60px 0;
+}
+.logo__footer-link {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-link-logo-start {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.footer-link-logo-end {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--logo-address-footer-color);
+}
+.list-address-item-link {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--logo-address-footer-color);
+  margin-bottom: 9px;
+  width: 231px;
+}
+.list-address-item-mail {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-address-footer-color);
+  margin-bottom: 9px;
+}
+.list-address-item-tel {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-address-footer-color);
+}
+.footer-contacts {
+  display: flex;
+  align-items: baseline;
+}
