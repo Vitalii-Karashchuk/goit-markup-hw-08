@@ -1,8 +1,68 @@
-.header__mobile-menu_item {
+.header__mobile-menu_block {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgb(206, 71, 71);
+  overflow: auto;
+}
+.header__mobile-menu_close {
+  display: flex;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  cursor: pointer;
+
+  background-color: transparent;
+  border: none;
+
+  &:hover .header__mobile-btn_close {
+    fill: var(--accent-color);
+  }
+  &:focus .header__mobile-btn_close {
+    fill: var(--accent-color);
+  }
+}
+
+.header__mobile-btn_close {
+  width: 18px;
+  height: 18px;
+  margin: auto;
+  fill: #000000;
+}
+.header__mobile-menu_item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.contacts-mobile__menu_link {
+  display: block;
+}
+.contacts-mobile__menu_tel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.contacts-mobile__menu_email {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
 }

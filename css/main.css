@@ -100,7 +100,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   .container__base {
     width: 1200px;
     padding-left: 15px;
@@ -109,7 +109,7 @@ img {
     margin-right: auto;
   }
 }
-
+ */
 .list-btn {
   display: flex;
   justify-content: center;
@@ -185,16 +185,16 @@ img {
   padding-bottom: 16px;
 }
 
-.header__mobile-menu {
+.header__mobile-menu-btn {
   width: 40px;
   height: 40px;
-  fill: #212121;
-}
-
-.header__mobile-menu-btn {
   background-color: transparent;
   padding: 0;
   border: none;
+}
+
+.header__mobile-menu {
+  fill: #212121;
 }
 
 .header__mobile-menu-btn, .header__mobile-menu:hover {
@@ -1046,12 +1046,75 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.header__mobile-menu_item {
+.header__mobile-menu_block {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: #ce4747;
+  overflow: auto;
+}
+
+.header__mobile-menu_close {
+  display: flex;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.header__mobile-menu_close:hover .header__mobile-btn_close {
+  fill: var(--accent-color);
+}
+
+.header__mobile-menu_close:focus .header__mobile-btn_close {
+  fill: var(--accent-color);
+}
+
+.header__mobile-btn_close {
+  width: 18px;
+  height: 18px;
+  margin: auto;
+  fill: #000000;
+}
+
+.header__mobile-menu_item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.contacts-mobile__menu_link {
+  display: block;
+}
+
+.contacts-mobile__menu_tel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.contacts-mobile__menu_email {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 /*# sourceMappingURL=main.css.map */
