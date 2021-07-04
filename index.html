@@ -30,8 +30,8 @@
                     </li>
                 </ul>
             </nav>
-            <button class="header__mobile-menu-btn" type="button">
-                <svg class="header__mobile-menu">
+            <button class="header__mobile-menu-btn" type="button" data-menu-button>
+                <svg class="header__mobile-menu-burger">
                     <use href="./images/sprite.svg#mobile-menu">_</use>
                 </svg>
             </button>
@@ -52,7 +52,7 @@
                 </li>
             </ul>
         </div>
-        <div class="header__mobile-menu_block">
+        <div class="header__mobile-menu_block is-open" data-menu>
             <button type="button" class="header__mobile-menu_close" data-modal-close>
                 <svg class="header__mobile-btn_close">
                     <use href="./images/sprite.svg#modal-close-black">_</use>
@@ -72,24 +72,24 @@
                 </ul>
                 <ul class="contacts-mobile__menu">
                     <li class="contacts-mobile__menu_tel">
-                        <a class="contacts-mobile__menu_link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <a class="contacts-mobile__menu_link-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                     <li class="contacts-mobile__menu_email">
-                        <a class="contacts-mobile__menu_link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="contacts-mobile__menu_link-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                 </ul>
-                <ul>
-                    <li>
-                        <a href="#">Instagram</a>
+                <ul class="header__social_mobile-menu" >
+                    <li class="header__social_mobile-menu-item" >
+                        <a class="header__social_mobile-menu-link link"  href="#">Instagram</a>
                     </li>
-                    <li>
-                        <a href="#">Twitter</a>
+                    <li class="header__social_mobile-menu-item" >
+                        <a class="header__social_mobile-menu-link link"  href="#">Twitter</a>
                     </li>
-                    <li>
-                        <a href="#">Facebook</a>
+                    <li class="header__social_mobile-menu-item" >
+                        <a class="header__social_mobile-menu-link link"  href="#">Facebook</a>
                     </li>
-                    <li>
-                        <a href="#">LinkedIn</a>
+                    <li class="header__social_mobile-menu-item" >
+                        <a class="header__social_mobile-menu-link link"  href="#">LinkedIn</a>
                     </li>
                 </ul>
             </div>
@@ -364,7 +364,7 @@
             </div>
         </section> -->
     </main>
-   <!--  <footer class="footer">
+    <footer class="footer">
         <div class="container container__base footer-contacts">
             <div class="address-footer">
                 <a class="logo logo__footer-link link" href="./index.html"><span class="footer-link-logo-start">Web</span><span
@@ -429,7 +429,7 @@
                 </form>
             </div>
         </div>  
-    </footer> -->
+    </footer>
     <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal-window">
             <button type="button" class="modal-close" data-modal-close>
@@ -476,7 +476,7 @@
             </form>
         </div>
     </div> -->
-    <!-- <script src="./js/menu.js"></script>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
 </body>
 </html>

@@ -11,8 +11,14 @@
     margin-right: auto;
   }
 }
-
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .container__base {
+    width: 738px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
   .container__base {
     width: 1200px;
     padding-left: 15px;
@@ -21,4 +27,3 @@
     margin-right: auto;
   }
 }
- */
