@@ -77,6 +77,26 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .footer-contacts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logo__footer-link {
+    text-align: center;
+  }
+  .list-address-item-link {
+    text-align: center;
+  }
+  .list-address-item-mail {
+    text-align: center;
+  }
+  .list-address-item-tel {
+    text-align: center;
+  }
+  .address-footer {
+    margin-left: 76px;
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-link-logo-start {
@@ -124,8 +144,25 @@
     letter-spacing: 0.03em;
     color: var(--text-address-footer-color);
   }
+
   .footer-contacts {
     display: flex;
     align-items: baseline;
+  }
+  .address-footer {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .logo__footer-link {
+    text-align: left;
+  }
+  .list-address-item-link {
+    text-align: left;
+  }
+  .list-address-item-mail {
+    text-align: left;
+  }
+  .list-address-item-tel {
+    text-align: left;
   }
 }
