@@ -8,15 +8,15 @@
     background-color: #ffffff;
     overflow: auto;
 
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    // opacity: 0;
+    // visibility: hidden;
+    // pointer-events: none;
   }
-  // .header__mobile-menu_block.is-open {
-  //   opacity: 1;
-  //   visibility: visible;
-  //   pointer-events: auto;
-  // }
+  .header__mobile-menu_block.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
   .header__mobile-menu_close {
     display: flex;
     position: absolute;
