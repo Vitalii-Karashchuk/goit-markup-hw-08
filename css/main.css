@@ -117,7 +117,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container__base {
-    width: 738px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -637,13 +637,14 @@ img {
   }
   .block-features {
     display: flex;
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
   }
   .heading-feature {
+    font-family: Roboto;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -653,6 +654,7 @@ img {
     margin-bottom: 10px;
   }
   .description-feature {
+    font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -665,9 +667,14 @@ img {
   .list-features {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
   .list-features-item {
-    width: 354px;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 100%;
   }
   .features-icon {
     width: 70px;
@@ -676,13 +683,12 @@ img {
   }
   .block-features {
     display: flex;
-    flex-basis: calc(100% / 2);
-    justify-content: space-between;
-    width: 354px;
+    width: 100%;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
+    margin-right: 30px;
   }
   .heading-feature {
     font-weight: 700;
@@ -698,7 +704,6 @@ img {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
   }
 }
 
@@ -709,12 +714,10 @@ img {
   }
   .list-features {
     display: flex;
+    flex-wrap: nowrap;
   }
   .list-features-item {
     width: 270px;
-  }
-  .list-features .list-features-item + .list-features-item {
-    margin-left: 30px;
   }
   .features-icon {
     width: 70px;
@@ -816,7 +819,6 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
   .our-team__list_item:not(:last-child) {
     margin-bottom: 30px;
@@ -862,9 +864,15 @@ img {
   .our-team__list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+    width: 100%;
   }
   .our-team__list_item {
-    width: 354px;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 100%;
     text-align: center;
     border-radius: 0px 0px 4px 4px;
     background-color: var(--background-color);
@@ -903,9 +911,7 @@ img {
   }
   .our-team__list {
     display: flex;
-  }
-  .our-team__list .our-team__list_item + .our-team__list_item {
-    margin-left: 30px;
+    flex-wrap: nowrap;
   }
   .our-team__list_item {
     width: 270px;
@@ -1317,15 +1323,16 @@ img {
   .list-projects {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
   .card-list-projects {
-    width: 354px;
+    width: 100%;
+    margin-right: 30px;
     margin-bottom: 30px;
+    flex-basis: calc(100% / 2 - 30px);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .card-list-projects:nth-last-child(-n + 2) {
-    margin-bottom: 0px;
   }
   .card-list-projects:hover, .card-list-projects:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1363,14 +1370,9 @@ img {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
+    flex-basis: calc(100% / 3 - 30px);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .card-list-projects:nth-last-child(-n + 3) {
-    margin-bottom: 0px;
-  }
-  .card-list-projects:nth-child(3n) {
-    margin-right: 0px;
   }
   .card-list-projects:hover, .card-list-projects:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1378,6 +1380,8 @@ img {
   .list-projects {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
   .heading-item-project {
     font-weight: 700;
@@ -1628,6 +1632,7 @@ img {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 }
 
 .btn-footer .icon-submit {
@@ -1790,8 +1795,8 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100vh;
+    width: 450px;
+    height: 100%;
     padding: 40px;
     background: var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -2055,11 +2060,14 @@ img {
     z-index: 10;
     background-color: #ffffff;
     overflow: auto;
-  }
-  .is-open {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+  }
+  .is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
   .header__mobile-menu_block.is-open {
     opacity: 1;

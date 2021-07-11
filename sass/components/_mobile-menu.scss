@@ -8,11 +8,15 @@
     z-index: 10;
     background-color: #ffffff;
     overflow: auto;
-  }
-  .is-open {
+
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+  }
+  .is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
   .header__mobile-menu_block.is-open {
     opacity: 1;
