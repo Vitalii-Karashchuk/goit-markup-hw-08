@@ -96,8 +96,23 @@
   .header__social_mobile-menu {
     display: flex;
   }
-  .header__social_mobile-menu-item:not(:last-child) {
-    margin-right: 20px;
+  .header__social_mobile-menu-item::after {
+    content: "";
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    height: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .header__social_mobile-menu-item:first-child {
+    margin-left: 0px;
+  }
+
+  .header__social_mobile-menu-item:last-child::after {
+    content: "";
+    border: none;
+    margin-right: 0px;
+    width: 0px;
   }
   .header__social_mobile-menu-link {
     font-family: Roboto;
@@ -112,10 +127,3 @@
     color: var(--accent-color);
   }
 }
-
-// @media screen and (min-width: 768px) {
-//   .header__mobile-menu_block,
-//   .header__mobile-menu_close {
-//     displey: none;
-//   }
-// }
