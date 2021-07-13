@@ -95,8 +95,13 @@
   .head-form-footer {
     text-align: center;
   }
+  .item-form-footer {
+    width: 570px;
+  }
   .field-input-footer {
-    width: 100%;
+    display: block;
+    margin: 0px auto;
+    width: 450px;
     margin-bottom: 20px;
   }
   .btn-footer {
@@ -114,6 +119,7 @@
     text-align: left;
   }
   .field-input-footer {
+    display: inline-block;
     width: 358px;
   }
   .btn-footer {

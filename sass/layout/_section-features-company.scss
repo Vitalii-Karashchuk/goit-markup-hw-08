@@ -5,8 +5,6 @@
   .list-features {
     display: flex;
     flex-direction: column;
-  }
-  .list-features-item {
     width: 450px;
   }
   .features-icon {
@@ -45,14 +43,14 @@
   .list-features {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-top: -30px;
+    margin-left: -30px;
   }
   .list-features-item {
     flex-basis: calc(100% / 2 - 30px);
-    margin-right: 30px;
-    margin-bottom: 30px;
-    width: 100%;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 354px;
   }
 
   .features-icon {
@@ -62,7 +60,7 @@
   }
   .block-features {
     display: flex;
-    width: 100%;
+    width: 354px;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
